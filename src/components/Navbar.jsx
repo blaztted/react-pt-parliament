@@ -24,6 +24,7 @@ function NavBar() {
 
   return (
     <Navbar
+      id="navbar"
       bg="white"
       data-bs-theme="light"
       expand="lg"
@@ -31,13 +32,27 @@ function NavBar() {
       className={scrolling ? "shadow-sm" : ""}
     >
       <Container>
-        <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+        <Navbar.Brand href="#home" id="nav-title">
+          GOV.pt
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#home" className="me-3">
+              Assembleia
+            </Nav.Link>
+            <Nav.Link href="#features " className="me-3">
+              Partidos
+            </Nav.Link>
+            <Nav.Link href="#pricing" className="me-3">
+              Líderes
+            </Nav.Link>
+            <Nav.Link href="#pricing" className="me-3">
+              Europa
+            </Nav.Link>
+            <Nav.Link href="#pricing" className="me-3">
+              Blog
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
